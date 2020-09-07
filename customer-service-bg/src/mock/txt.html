@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title></title>
+</head>
+<body>
+
+js 测试页
+
+<script type="text/javascript">
+    function Mobile(name, price) {
+        this.name = name;
+        this.price = price;
+    }
+    Mobile.prototype.sell = function () {
+        console.log(this.name + ",价格为：" + this.price)
+    }
+    var iPhone = new Mobile("iphone7", 2000);
+    console.log(iPhone)
+    // iPhone.sell()
+</script>
+
+</body>
+</html>
